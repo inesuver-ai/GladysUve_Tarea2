@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>0</y>
+      <w>510</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>/edu.ups.poo.audiovisual::ContenidoAudiovisual/
+--
+-contar = 0: int
+-titulo: String
+-duracionEnMinutos: int
+-genero: String
+-id: int
+--
++ContenidoAudiovisual(String titulo, int duracionEnMinutos, String genero): ctor
++getTitulo(): String
++setTitulo(String titulo): void
++getDuracionEnMinutos(): int
++setDuracionEnMinutos(int duracionEnMinutos): void
++getGenero(): String
++setGenero(String genero): void
++getId(): int
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>550</y>
+      <w>440</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::Actor
+--
+-nombre: String
+-nacionalidad: String
+-AñoNacimiento: int
+--
++Actor(String nombre, String nacionalidad, int AñoNacimiento): ctor
++getNombre(): String
++setNombre(String nombre): void
++getNacionalidad(): String
++setNacionalidad(String nacionalidad): void
++getAñoNacimiento(): int
++setAñoNacimiento(int año): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>320</y>
+      <w>530</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::Documental
+--
+-tema: String
+--
++Documental(String titulo, int duracionEnMinutos, String genero, String tema): ctor
++getTema(): String
++setTema(String tema): void
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>320</y>
+      <w>520</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::Pelicula
+--
+-estudio: String
+--
++Pelicula(String titulo, int duracionEnMinutos, String genero, String estudio): ctor
++getEstudio(): String
++setEstudio(String estudio): void
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>320</y>
+      <w>540</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::SerieDeTV
+--
+-temporadas: int
+--
++SerieDeTV(String titulo, int duracionEnMinutos, String genero, int temporadas): ctor
++getTemporadas(): int
++setTemporadas(int temporadas): void
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1200</x>
+      <y>540</y>
+      <w>250</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::Investigador
+--
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>550</y>
+      <w>250</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::Temporada
+--
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>450</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>450</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1300</x>
+      <y>450</y>
+      <w>110</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..1
+teaches to &gt;</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

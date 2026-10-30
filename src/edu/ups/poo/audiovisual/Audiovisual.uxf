@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1190</x>
+      <y>20</y>
+      <w>510</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>/edu.ups.poo.audiovisual::ContenidoAudiovisual/
+--
+-contar = 0: int
+-titulo: String
+-duracionEnMinutos: int
+-genero: String
+-id: int
+--
++ContenidoAudiovisual(String titulo, int duracionEnMinutos, String genero): ctor
++getTitulo(): String
++setTitulo(String titulo): void
++getDuracionEnMinutos(): int
++setDuracionEnMinutos(int duracionEnMinutos): void
++getGenero(): String
++setGenero(String genero): void
++getId(): int
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2610</x>
+      <y>370</y>
+      <w>820</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::Podcast
+--
+-temaPrincipal: String
+-numeroDeEpisodio: int
+-plataforma: String
+--
++Podcast(String titulo, int duracionEnMinutos, String genero, String temaPrincipal, int numeroDeEpisodio, String plataforma): ctor
++compartir(): void
++mostrarDetalles(): void
++getTemaPrincipal(): String
++setTemaPrincipal(String tema): void
++getNumeroDeEpisodio(): int
++setNumeroDeEpisodio(int numero): void
++getPlataforma(): String
++setPlataforma(String plataforma): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1730</x>
+      <y>370</y>
+      <w>800</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::ProgramaDeRadio
+--
+-locutor: String
+-frecuencia: String
+-enVivo: boolean
+--
++ProgramaDeRadio(String titulo, int duracionEnMinutos, String genero, String locutor, String frecuencia, boolean enVivo): ctor
++emitirEnVivo(): void
++mostrarDetalles(): void
++getLocutor(): String
++setLocutor(String locutor): void
++getFrecuencia(): String
++setFrecuencia(String frecuencia): void
++isEnVivo(): boolean
++setEnVivo(boolean enVivo): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>620</y>
+      <w>440</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::Actor
+--
+-nombre: String
+-nacionalidad: String
+-anioNacimiento: int
+--
++Actor(String nombre, String nacionalidad, int anioNacimiento): ctor
++getNombre(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1160</x>
+      <y>370</y>
+      <w>530</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::Documental
+--
+-tema: String
+-investigadores: List&lt;Investigador&gt;
+--
++Documental(String titulo, int duracionEnMinutos, String genero, String tema): ctor
++agregarInvestigador(Investigador inv): void
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>370</y>
+      <w>520</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::Pelicula
+--
+-director: String
+-actores: List&lt;Actor&gt;
+--
++Pelicula(String titulo, int duracionEnMinutos, String genero, String director): ctor
++agregarActor(Actor actor): void
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>370</y>
+      <w>550</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::SerieDeTV
+--
+-productor: String
+-temporadas: List&lt;Temporada&gt;
+--
++SerieDeTV(String titulo, int duracionEnMinutos, String genero, String productor): ctor
++agregarTemporada(int numero, int episodios): void
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1200</x>
+      <y>590</y>
+      <w>470</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::Investigador
+--
+-nombre: String
+-especialidad: String
+-institucion: String
+--
++Investigador(String nombre, String especialidad, String institucion): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>620</y>
+      <w>290</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::Temporada
+--
+-numero: int
+-episodios: int
+--
++Temporada(int numero, int episodios): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>840</y>
+      <w>280</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>edu.ups.poo.audiovisual::MainAudiovisual
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>500</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>500</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1420</x>
+      <y>500</y>
+      <w>110</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..1
+teaches to &gt;</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>50</y>
+      <w>950</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>930.0;10.0;10.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>120</y>
+      <w>400</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>380.0;10.0;10.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1440</x>
+      <y>300</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1690</x>
+      <y>120</y>
+      <w>430</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;410.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1690</x>
+      <y>50</y>
+      <w>1310</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;1290.0;320.0</additional_attributes>
+  </element>
+</diagram>

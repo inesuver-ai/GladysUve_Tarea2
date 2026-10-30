@@ -1,4 +1,4 @@
-package uni1a;
+package edu.ups.poo.audiovisual;
 
 public abstract class ContenidoAudiovisual {
     private static int contar = 0;
@@ -8,7 +8,6 @@ public abstract class ContenidoAudiovisual {
     private int id;
 
     public ContenidoAudiovisual(String titulo, int duracionEnMinutos, String genero) {
-        this.id = contar++;
         this.titulo = titulo;
         this.duracionEnMinutos = duracionEnMinutos;
         this.genero = genero;
@@ -41,7 +40,7 @@ public abstract class ContenidoAudiovisual {
         this.genero = genero;
     }
 
-    // Getter para el campo 'id' (no se proporciona el Setter ya que 'id' se asigna en el constructor y parece ser inmutable)
+    // Getter para el campo 'id' 
     public int getId() {
         return id;
     }
