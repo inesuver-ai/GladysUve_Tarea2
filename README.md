@@ -64,10 +64,6 @@ ContenidoAudiovisual (abstracta)
 
 🚀 Cómo Ejecutar el Proyecto
 
- Requisitos Previos
-- Java JDK 17 o superior
-- Eclipse IDE (o cualquier entorno compatible)
-
  Pasos
 1. Importar el proyecto en el IDE
 2. Verificar que todas las clases estén en el paquete:
